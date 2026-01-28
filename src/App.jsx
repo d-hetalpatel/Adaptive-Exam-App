@@ -235,7 +235,7 @@ function ExamApp() {
   
   const [numQuestions, setNumQuestions] = useState(20);
   const [timerMinutes, setTimerMinutes] = useState(30);
-  const QUESTIONS_API_URL = "http://localhost:5000/api/questions";
+  const QUESTIONS_API_URL = "https://adaptive-exam-cms-api.onrender.com";//"http://localhost:5000/api/questions";
 
   useEffect(() => {
     fetch(QUESTIONS_API_URL)
